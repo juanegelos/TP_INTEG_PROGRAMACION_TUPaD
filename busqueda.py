@@ -72,36 +72,30 @@ target_no_existente_grande = 10000000000 + 1 # Un número fuera del rango
 target_existente_pequena = data_pequena[-1]
 target_no_existente_pequena = 999
 
-
 # Búsqueda Lineal
-print("\n### Búsqueda Lineal (Iterativa) ###")
-print("  --- Lista Pequeña ---")
+print("\n### Búsqueda Lineal (Iterativa) ###\n")
+print("--- Lista Pequeña ---")
 medir_y_mostrar("Lineal (existente)", busqueda_lineal, data_pequena, target_existente_pequena)
 medir_y_mostrar("Lineal (no existente)", busqueda_lineal, data_pequena, target_no_existente_pequena)
-
-print("  --- Lista Grande ---")
+print("\n--- Lista Grande ---")
 medir_y_mostrar("Lineal (existente)", busqueda_lineal, data_grande, target_existente_grande)
 medir_y_mostrar("Lineal (no existente)", busqueda_lineal, data_grande, target_no_existente_grande)
 
-
 # Búsqueda Binaria Iterativa
-print("\n### Búsqueda Binaria (Iterativa) ###")
-print("  --- Lista Pequeña ---")
+print("\n### Búsqueda Binaria (Iterativa) ###\n")
+print("--- Lista Pequeña ---")
 medir_y_mostrar("Binaria Iterativa (existente)", busqueda_binaria_iterativa, data_pequena, target_existente_pequena)
 medir_y_mostrar("Binaria Iterativa (no existente)", busqueda_binaria_iterativa, data_pequena, target_no_existente_pequena)
-
-print("  --- Lista Grande ---")
+print("\n--- Lista Grande ---")
 medir_y_mostrar("Binaria Iterativa (existente)", busqueda_binaria_iterativa, data_grande, target_existente_grande)
 medir_y_mostrar("Binaria Iterativa (no existente)", busqueda_binaria_iterativa, data_grande, target_no_existente_grande)
 
-
 # Búsqueda Binaria Recursiva
-print("\n### Búsqueda Binaria (Recursiva) ###")
-print("  --- Lista Pequeña ---")
+print("\n### Búsqueda Binaria (Recursiva) ###\n")
+print("--- Lista Pequeña ---")
 medir_y_mostrar("Binaria Recursiva (existente)", busqueda_binaria_recursiva, data_pequena, target_existente_pequena, 0, len(data_pequena) - 1)
 medir_y_mostrar("Binaria Recursiva (no existente)", busqueda_binaria_recursiva, data_pequena, target_no_existente_pequena, 0, len(data_pequena) - 1)
-
-print("  --- Lista Grande ---")
+print("\n--- Lista Grande ---")
 # Para la búsqueda binaria recursiva en listas grandes, es importante el límite de recursión de Python.
 # Si la lista fuera *mucho* más grande, esta versión podría fallar con un RecursionError.
 medir_y_mostrar("Binaria Recursiva (existente)", busqueda_binaria_recursiva, data_grande, target_existente_grande, 0, len(data_grande) - 1)
