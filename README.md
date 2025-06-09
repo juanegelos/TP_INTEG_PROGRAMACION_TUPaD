@@ -20,8 +20,7 @@ Contenido:
         generador_listas.py
         ordenamiento.py
         personas1.txt
-
-        Video explicativo:  
+        Video explicativo: https://www.youtube.com/watch?v=5scjcICuElw
 
 Repositorio: https://github.com/juanegelos/TP_INTEG_PROGRAMACION_TUPaD.git
 

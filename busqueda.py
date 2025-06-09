@@ -41,7 +41,7 @@ def busqueda_binaria_recursiva(lista_ordenada, valor_objetivo, bajo, alto):
 # --- Preparación de los Datos ---
 
 # Generar una lista grande y ordenarla
-data_grande = [random.randint(1, 10000000000) for _ in range(1000000)]
+data_grande = [random.randint(1, 10000000000) for _ in range(100000)]
 data_grande.sort() # Necesario para búsqueda binaria
 
 # Lista pequeña predefinida y ordenada
